@@ -1,0 +1,137 @@
+
+/*all elements will have border box to properly soace out*/
+   * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+        /*decide on font and if needed link it through google fonts !!*/
+    body {
+      font-family: Arial, sans-serif;
+    }
+/*navigation*/
+    /*link style. has no underline, and cursor will change into pointer for greater accesability*/
+    nav a{
+        text-decoration: none;
+        padding: 10px;
+        color: #343436;
+        cursor: pointer;
+    }
+    /*transition of colour when hovered*/
+    nav a :hover{
+        transition: color;
+        transition-delay: 10ms;
+        color: #ffffff;
+    }
+    /*nav bar apearance befor scrolling over*/
+    .navbar {
+        /*ensures that it stays in the same space after scrolled*/
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /*transparent backround colour initialy*/
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        /*transition that will occure*/
+        transition: background-color 0.3s, box-shadow 0.3s;
+        /*z index ensure that it is on top of all other elements always*/
+        z-index: 1000;
+    }
+    /*navbar after being scrolled changes colour and gains a box-shadow and additionaly styles it*/
+    .navbar-scrolled {
+      background-color: rgba(226, 235, 232, 0.9);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    /*size of ghibli icon*/
+    .navbar-brand img {
+      width: 90px;
+      height: 40px;
+    }
+    /*size of menu icon*/
+    .menu-icon {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+    /*nav container that wraps around navigation of links*/
+  .nav-wrapper {
+    /*position does not change no matter any elemnts or actions*/
+        position: absolute;
+        margin: 2%;
+        right: 80px; 
+        /*half transparent backround colour*/
+        background: rgba(226, 235, 232, 0.6);
+        border-radius: 8px;
+        /*adds shadows effect around it*/
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        /*overflow, hidden eleminates scroll bars, since they won't be needed in this navbar*/
+        overflow: hidden;
+        display: none;
+  }
+    /*nav container changes to block and using java the rest of links will apear in the space to it's left and displayed block*/
+    .nav-wrapper.open {
+        display: block;
+    }
+    /*this is styling of nav list ensuring they are located in a row*/
+    .nav {
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    /*backround image styling*/
+    #intro {
+      background-image: url(images-index/studio-ghibli-howl-s-garden-plal8rt6cs9zike9.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      /*will move when scrolled*/
+      position: relative;
+    }
+    /*adds a layer of darker semi transparent div to make other elements pop and easier to read*/
+    #intro::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      /*ensures it's on top of backround image*/
+      z-index: 1;
+    }
+    /*positioning of heading in the middle of the page*/
+    .intro-content {
+      position: relative;
+      /*ensures it's on top of darkening div*/
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    /*look this up- typography!!*/
+    .display-1 {
+      font-size: 4rem;
+      letter-spacing: 10px;
+    }
+
+    main .container {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1600px) {
+      .display-1 {
+        font-size: 8rem;
+        letter-spacing: 40px;
+      }
+    }
+
+/*!! are to check or elaborate later*/
