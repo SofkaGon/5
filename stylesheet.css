@@ -134,4 +134,19 @@
       }
     }
 
+    #blue-section{
+      background-image: url(https://christandpopculture.com/wp-content/uploads/2014/08/20140816.ghibliA-1024x687.jpg);
+      width: 100%;
+      height: 900px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #blue-section-content div{
+      background-color: rgba(0, 0, 0, 0.05);
+      z-index: 100;
+      position: relative;
+      width: 100px;
+      height: 100px;
+    }
 /*!! are to check or elaborate later*/
