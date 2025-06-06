@@ -17,6 +17,64 @@ Date Last Modified:-->
   <title>Ghibli.about</title>
   <!--linking style sheet-->
   <link rel="stylesheet" href="stylesheet.css"/>
+  <style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 2%;
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 20px;
+  color: #5E84C5;
+}
+
+#img-div-2{
+  max-width: 400px;
+  height: 225px;
+}
+#img-div{
+  max-width: 200px;
+  height: 225px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.item2 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+
+}
+.item3 {
+  grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+}
+.item4 {
+  grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+
+}
+.item5 {
+  grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+
+}
+.item6 {
+  grid-column: 4 / span 2;
+    grid-row: 3 / span 2;
+
+}
+.item7 {
+  grid-column: 6 / span 1;
+    grid-row: 3 / span 2;
+
+}
+  </style>
 </head>
 <body>
   <!--nav section-->
@@ -57,13 +115,25 @@ Date Last Modified:-->
     </div>
   </content>
 </section>
-<section id="about-ghibli-blue">
+<article id="about-ghibli-blue">
   <div>
-    <img id="about-img-ghibli" src="https://www.whitstable.co.uk/wp-content/uploads/2020/06/no-image.jpg">
+    <img id="about-img-ghibli" src="https://www.ghibli.jp/gallery/totoro025.jpg">
   </div>
+  <div id="text-div-about-ghibli-blue">
         <h2>STUDIO GHIBLI</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
-
+  </div>
+</article>
+<section id="about-white-section">
+<div class="grid-container">
+  <div class="item1"><img id="img-div-2" src="https://www.ghibli.jp/images/omake1.jpg"></div>
+  <div class="item2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p></div>
+  <div class="item3"><img id="img-div-2" src="https://www.ghibli.jp/gallery/majo001.jpg"></div>  
+  <div class="item4"><img id="img-div" src="https://www.ghibli.jp/images/red1.jpg"></div>
+  <div class="item5"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p></div>
+  <div class="item6"><img id="img-div-2" src="https://www.ghibli.jp/images/omake2.jpg"></div>
+  <div class="item7"><img id="img-div" src="https://www.ghibli.jp/images/mononoke1.jpg"></div>
+</div>
 </section>
 </main>
 <!--javascript-->

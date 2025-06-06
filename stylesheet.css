@@ -187,8 +187,39 @@
       height: 400px;
       margin: 10%;
       margin-left: 30%;
+      display: flex;
     }
 
+    #text-div-about-ghibli-blue{
+      flex-direction: column;
+      display: flex ;
+      align-content: center;
+      width: 80%;
+      margin-left:30%;
+      margin-top: 5%;
+      margin-right: 5%;
+      margin-bottom: 5%;
+      text-align: right;
+      max-width: 500px;
+    }
 
+    #text-div-about-ghibli-blue h2{
+      color: #5E84C5;
+      padding: 5%;
+      font-size: 3rem;
+    }
+
+     #text-div-about-ghibli-blue p{
+      color: #5E84C5;
+      padding: 5%;
+      font-size: 20px
+    }
+    #about-white-section {
+      display: grid;
+      gap: 2% 2%;
+      height: 700px;
+      width: 100%;
+      background-color: #ffffff;
+    }
 
 /*!! are to check or elaborate later*/
