@@ -1,5 +1,5 @@
-
-/*all elements will have border box to properly soace out*/
+/*elemnt style across all pages*/
+    /*all elements will have border box to properly soace out*/
    * {
       box-sizing: border-box;
       margin: 0;
@@ -85,6 +85,7 @@
       gap: 10px;
     }
 
+  /*beggining section styling*/
     /*backround image styling*/
     #intro {
       background-image: url(images-index/studio-ghibli-howl-s-garden-plal8rt6cs9zike9.jpg);
@@ -134,6 +135,64 @@
       }
     }
 
+  /*footer*/
+  footer{
+    background-color: #E3EDB0;
+    width: 100%;
+    height: 550px;
+  }
+
+  footer div img{
+    width: 80px;
+    height: 80px;
+    padding: 20%;
+  }
+
+  #icons{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  footer legend{
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    justify-content: space-around;
+  }
+
+  footer legend a{
+    text-decoration: none;
+    color: #606537;
+    font-size: 20px;
+  }
+
+  footer legend li :hover{
+    color: #000000;
+    font-size: 20px;
+  }
+
+  footer legend h4{
+    padding-bottom: 8% ;
+    padding-top: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000; 
+    font-size: 2rem; 
+  }
+  #footer-copyright{
+    padding: 2%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+/*index/about-page*/
     #blue-section{
       background-image: url(https://christandpopculture.com/wp-content/uploads/2014/08/20140816.ghibliA-1024x687.jpg);
       width: 100%;
@@ -141,7 +200,7 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-/*elements on image container to display flex*/
+    /*elements on image container to display flex*/
     #blue-section-content {
       display: flex;
       align-content: center;
@@ -222,62 +281,61 @@
       background-color: #ffffff;
     }
 
-    /*footer*/
-    footer{
-  background-color: #E3EDB0;
-  width: 100%;
-  height: 550px;
-}
 
-footer div img{
-  width: 80px;
-  height: 80px;
-  padding: 20%;
-}
-
-#icons{
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-footer legend{
-  display: flex;
-  width: 100%;
-  margin-top: 5%;
-  margin-bottom: 10%;
-  justify-content: space-around;
-
-}
-
-footer legend a{
-  text-decoration: none;
-  color: #606537;
-  font-size: 20px;
-}
-
-footer legend li :hover{
-  color: #000000;
-  font-size: 20px;
-}
-
-footer legend h4{
-  padding-bottom: 8% ;
-  padding-top: 0%;
-  padding-left: 5%;
-  padding-right: 5%;
-  color: #000000; 
-  font-size: 2rem; 
-}
-#footer-copyright{
-    padding: 2%;
-    background-color: #ffffff;
+/*events page*/
+  #events-ghibli-green{
+    background-color: #B8C269;
+    width: 100%;
+    height: 500px;
     display: flex;
+    align-content: center;
     justify-content: center;
-    font-weight: bold;
-}
+  }
+
+  #text-div-events-ghibli-green{
+    background-color: #B8C269;
+    margin: 10%;
+  }
+
+  #text-div-events-ghibli-green :hover{
+    background-color: #6f7930;
+  }
+
+  #events-img-ghibli-green{
+    width: 400px;
+    height: 500px;
+    margin-left: 30%;
+    margin-right: 10%;
+    display: flex;
+  }
+
+  #text-div-events-ghibli-green{
+    flex-direction: column;
+    display: flex ;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    margin-left:20%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: right;
+    max-width: 550px;
+  }
+
+  #text-div-events-ghibli-green h2{
+    color: #E3EDB0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;  
+    font-size: 4rem;
+  }
+
+  #text-div-events-ghibli-green p{
+    color: #ffffff;
+    padding: 2%;
+    font-size: 1rem;
+  }
 
 /*!! are to check or elaborate later*/
