@@ -299,6 +299,7 @@
 
   #text-div-events-ghibli-green :hover{
     background-color: #6f7930;
+    transition-duration: 1s;
   }
 
   #events-img-ghibli-green{
@@ -338,4 +339,9 @@
     font-size: 1rem;
   }
 
+  #events-ghibli-white{
+    width: 100%;
+    height: fit-content;
+    margin: 5%;
+  }
 /*!! are to check or elaborate later*/
