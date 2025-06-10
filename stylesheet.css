@@ -348,4 +348,79 @@
     height: fit-content;
     margin: 5%;
   }
+  /*green*/
+  #text-div-about-ghibli-green{
+    flex-direction: column;
+    display: flex ;
+    align-content: center;
+    width: 100%;
+    margin-left:5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  #text-div-about-ghibli-green h2{
+    color: #B8C269;
+    padding: 5%;
+    font-size: 3rem;
+  }
+
+  #text-div-about-ghibli-green p{
+    color: #606537;
+    padding: 5%;
+    font-size: 20px
+  }
+  /*blue*/
+    #text-div-about-ghibli-blue{
+    flex-direction: column;
+    display: flex ;
+    align-content: center;
+    width: 100%;
+    margin-left:5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  #text-div-about-ghibli-blue h2{
+    color: #5E84C5;
+    padding: 5%;
+    font-size: 3rem;
+  }
+
+  #text-div-about-ghibli-blue p{
+    color: #37517e;
+    padding: 5%;
+    font-size: 20px
+  }
+  /*red*/
+    #text-div-about-ghibli-red{
+    flex-direction: column;
+    display: flex ;
+    align-content: center;
+    width: 100%;
+    margin-left:5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    max-width: 500px;
+  }
+
+  #text-div-about-ghibli-red h2{
+    color: #BD351F;
+    padding: 5%;
+    font-size: 3rem;
+  }
+
+  #text-div-about-ghibli-red p{
+    color: #5A0E00;
+    padding: 5%;
+    font-size: 20px
+  }
 /*!! are to check or elaborate later*/

@@ -10,49 +10,84 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 <style>
+body {
+  background-color: #f0f4f8;
+  overflow-x: hidden; 
+}
   #slider-white-ghibli-events{
   background: linear-gradient(135deg, #f0f4f8, #ffffff);
   display: flex; justify-content: center; align-items: flex-start;
   min-height: 100vh;
-}
-.slider-container {
-  width: 90%;
-  max-width: 380px;
-  height: 1000px;
-  margin-top: 60px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  padding: 20px;
+  z-index: 1;
   position: relative;
 }
 
-.swiper-slide.slide {
+.slider-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    border-radius: 16px;
+
+}
+
+.swiper-slide {
   background: #fff;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  display: flex;
-  flex-direction: row;
-  transition: transform .3s ease;
   text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.6s ease; 
+  width: 100%;
+  justify-content: centerwidth: 100%;
 }
-.swiper-slide.slide:hover { 
+.swiper-slide:hover { 
   transform: translateY(-8px);
 }
 .card-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   object-fit: cover;
-  object-position: right;
   border-radius: 1000px;
-  width: 400px;
-  height: 400px;
-  margin: 10%;
-  margin-right: 30%;
-  display: flex;
+  margin: 20px auto;
+  display: block;
+}
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  color: #1d72b8;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-100%);
+  font-size: 32px;
+  color: #1d72b8;
+  z-index: 10;
 }
 
-
+.swiper-button-prev {
+  left: 20%;
+}
+.swiper-button-next {
+  left: 80%;
+}
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100vh;
+}
 
 </style>
 <body>
@@ -100,16 +135,86 @@
     </div>
   </section>
 <div style="background-color: #ffffff; height: 20px; width: 100%;"></div>
-<section id="slider-white-ghibli-events">
-  <div id="slider-container">
-    <div>
-      <img class="card-img" src="https://www.ghibli.jp/gallery/totoro025.jpg">
+
+    <section id="slider-white-ghibli-events">
+    <!--blue-->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slider-container">
+        <div>
+          <img class="card-img" src="https://www.ghibli.jp/gallery/totoro025.jpg">
+        </div>
+        <div id="text-div-about-ghibli-blue">
+            <h2>STUDIO GHIBLI</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
-    <div id="text-div-about-ghibli-blue">
-        <h2>STUDIO GHIBLI</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+     <!--green-->
+     <div class="swiper-slide">
+      <div class="slider-container">
+        <div>
+          <img class="card-img" src="https://www.ghibli.jp/gallery/totoro025.jpg">
+        </div>
+        <div id="text-div-about-ghibli-green">
+            <h2>STUDIO GHIBLI</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
-</div>
+      <!--red-->
+    <div class="swiper-slide">
+      <div class="slider-container">
+        <div>
+          <img class="card-img" src="https://www.ghibli.jp/gallery/totoro025.jpg">
+        </div>
+        <div id="text-div-about-ghibli-red">
+            <h2>STUDIO GHIBLI</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+      <!--blue-->
+    <div class="swiper-slide">
+      <div class="slider-container">
+        <div>
+          <img class="card-img" src="https://www.ghibli.jp/gallery/totoro025.jpg">
+        </div>
+        <div id="text-div-about-ghibli-blue">
+            <h2>STUDIO GHIBLI</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+    <!--green-->
+    <div class="swiper-slide">
+      <div class="slider-container">
+        <div>
+          <img class="card-img" src="https://www.ghibli.jp/gallery/totoro025.jpg">
+        </div>
+        <div id="text-div-about-ghibli-green">
+              <h2>STUDIO GHIBLI</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+    <!--red-->
+      <div class="swiper-slide">
+        <div class="slider-container">
+          <div>
+            <img class="card-img" src="https://www.ghibli.jp/gallery/totoro025.jpg">
+          </div>
+          <div id="text-div-about-ghibli-red">
+              <h2>STUDIO GHIBLI</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-button-prev">arrow_back</div>
+    <div class="swiper-button-next">arrow_forward</div>
 </section>
 </main>
 
@@ -146,7 +251,7 @@
     <p>Sofiia Gontar &copy;  all right reserved</p>
   </section>
 </footer>
-<!--javascript-->>
+<!--javascript-->
 <script>
   //burger menu uses const to display elements using getelemntbyid 
   const burgerIcon = document.getElementById('burger-icon');
@@ -171,6 +276,25 @@
     } else {
       navbar.classList.remove('navbar-scrolled');
     }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'vertical',     //  This is the key change
+    loop: true,
+    speed: 1200,
+    spaceBetween: 40,
+    slidesPerView: 1,
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+    mousewheel: true,       // allows scrolling with mouse
+    grabCursor: true        // shows grab icon while dragging
+
   });
 </script>
 
