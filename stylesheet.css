@@ -249,7 +249,7 @@
       display: flex;
     }
 
-    #text-div-about-ghibli-blue{
+    #text-div-about-ghibli-blue-index{
       flex-direction: column;
       display: flex ;
       align-content: center;
@@ -262,13 +262,13 @@
       max-width: 500px;
     }
 
-    #text-div-about-ghibli-blue h2{
+    #text-div-about-ghibli-blue-index h2{
       color: #5E84C5;
       padding: 5%;
       font-size: 3rem;
     }
 
-    #text-div-about-ghibli-blue p{
+    #text-div-about-ghibli-blue-index p{
       color: #5E84C5;
       padding: 5%;
       font-size: 20px
