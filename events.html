@@ -15,7 +15,7 @@ body {
   overflow-x: hidden; 
 }
   #slider-white-ghibli-events{
-  background: linear-gradient(135deg, #f0f4f8, #ffffff);
+  background: linear-gradient(135deg, #E2EBE8, #ffffff);
   display: flex; justify-content: center; align-items: flex-start;
   min-height: 100vh;
   z-index: 1;
@@ -79,9 +79,11 @@ body {
 
 .swiper-button-prev {
   left: 20%;
+  rotate: -90deg;
 }
 .swiper-button-next {
   left: 80%;
+  rotate: -90deg;
 }
 .swiper,
 .swiper-wrapper,
@@ -213,13 +215,15 @@ body {
       </div>
     </div>
   </div>
-    <div class="swiper-button-prev">arrow_back</div>
-    <div class="swiper-button-next">arrow_forward</div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</section>
+<div style="background-color: #ffffff; height: 20px; width: 100%;"></div>
+<section id="ghibli-events-calendar-red">
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FWarsaw&showPrint=0&src=MTdhOWJhYjAyNjZhMTNmMjk5NTYxMjU5Y2ZiOTYzOWIyMjljNGEyZTMwOWFlMTNjMDQwODUzM2JkNGZkNDkzYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23ad1457" style="border:solid 20px #BD351F" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </section>
 </main>
-
-
-
+<div style="background-color: #ffffff; height: 20px; width: 100%;"></div>
 <footer>
   <section id="icons">
     <div><a href="https://www.facebook.com/GhibliUSA/"><img onmouseover="document.getElementById('face-icon').src='images-index/facebook_3670203.png'" id="face-icon" onmouseleave="document.getElementById('face-icon').src='images-index/facebook_1384005.png'" src="images-index/facebook_1384005.png"></a></div>

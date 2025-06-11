@@ -423,4 +423,16 @@
     padding: 5%;
     font-size: 20px
   }
+
+  #ghibli-events-calendar-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCB9B5;
+    padding: 5%;
+  }
+
+  #ghibli-events-calendar-red iframe{
+    border-radius: 20px;
+  }
 /*!! are to check or elaborate later*/
