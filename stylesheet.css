@@ -442,6 +442,12 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+      .red-section-films-half{
+      width: 50%;
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     /*elements on image container to display flex*/
     .red-section-content-left {
       display: flex;
@@ -517,5 +523,53 @@
     }
     #Grave-of-the-Fireflies{
       background-image: url(https://i0.wp.com/www.the-pixels.com/wp-content/uploads/2016/12/grave-of-the-fireflies-colour.png?resize=1568%2C844&ssl=1);
+    }
+    #Princess-Mononoke{
+      background-image: url(images-index/mononoke033.jpg);
+    }
+    #Nausicaä-of-the-Valley-of-the-Wind{
+      background-image: url(images-index/nausicaa025.jpg);
+    }
+    #Laputa-Castle-in-the-Sky{
+      background-image: url(images-index/laputa038.jpg);
+    }
+    #The-Wind-Rises{
+      background-image: url(images-index/kazetachinu043.jpg);
+    }
+    #Porco-Rosso{
+      background-image: url(images-index/porco034.jpg);
+    }
+    #Whisper-of-the-Heart{
+      background-image: url(images-index/mimi034.jpg);
+    }
+    #Ponyo{
+      background-image: url(images-index/ponyo049.jpg);
+    }
+    #When-Marnie-Was-There{
+      background-image: url(images-index/marnie050.jpg);
+    }
+    #The-Tale-of-the-Princess-Kaguya{
+      background-image: url(images-index/kaguyahime038.jpg);
+    }
+    #The-Secret-World-of-Arrietty{
+      background-image: url(images-index/karigurashi032.jpg);
+    }
+    #The-Boy-and-the-Heron{
+      background-image: url(images-index/kimitachi031.jpg);
+    }
+    #The-Cat-Returns{
+      background-image: url(images-index/baron047.jpg);
+    }
+    #From-Up-on-Poppy-Hill{
+      background-image: url(images-index/kokurikozaka050.jpg);
+    }
+    #Only-Yesterday{
+      background-image: url(images-index/omoide016.jpg);
+    }
+    #Pom-Poko{
+      background-image: url(images-index/tanuki026.jpg);
+    }
+    #Ocean-Waves{
+      background-image: url(images-index/umi031.jpg);
     }
 /*!! are to check or elaborate later*/
