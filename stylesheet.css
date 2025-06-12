@@ -365,7 +365,7 @@
   #text-div-about-ghibli-green h2{
     color: #B8C269;
     padding: 5%;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #text-div-about-ghibli-green p{
@@ -390,7 +390,7 @@
   #text-div-about-ghibli-blue h2{
     color: #5E84C5;
     padding: 5%;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #text-div-about-ghibli-blue p{
@@ -415,7 +415,7 @@
   #text-div-about-ghibli-red h2{
     color: #BD351F;
     padding: 5%;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #text-div-about-ghibli-red p{
@@ -571,5 +571,111 @@
     }
     #Ocean-Waves{
       background-image: url(images-index/umi031.jpg);
+    }
+    #On-Your-Mark{
+      background-image: url(images-index/onyourmark005.jpg);
+    }
+    #My-Neighbors-the-Yamadas{
+      background-image: url(images-index/yamada050.jpg);
+    }
+    #Tales-from-Earthsea{
+      background-image: url(images-index/ged048.jpg);  
+    }
+    #Red-Turtle{
+      background-image: url(images-index/redturtle037.jpg);  
+    }
+    #Earwig-and-the-Witch{
+      background-image: url(https://www.ghibli.jp/gallery/aya046.jpg);  
+    }
+    #the-GHIBLIES-episode-2{
+      background-image: url(images-index/ghiblies038.jpg);  
+    }
+
+/*awards page*/
+    #award-ghibli-red{
+      background-color: #DCB9B5;
+      width: 100%;
+      height: 500px;
+      display: flex;
+      align-content: center;
+    }
+
+    #award-img-ghibli{
+      border-radius: 1000px;
+      width: 400px;
+      height: 400px;
+      margin: 10%;
+      margin-left: 30%;
+      display: flex;
+    }
+
+    #text-div-award-ghibli-red{
+      flex-direction: column;
+      display: flex ;
+      align-content: center;
+      width: 80%;
+      margin-left:30%;
+      margin-top: 5%;
+      margin-right: 5%;
+      margin-bottom: 5%;
+      text-align: right;
+      max-width: 500px;
+    }
+
+    #text-div-award-ghibli-red h2{
+      color: #BD351F;
+      padding: 5%;
+      font-size: 3rem;
+    }
+
+    #text-div-award-ghibli-red p{
+      color: #5A0E00;
+      padding: 5%;
+      font-size: 20px
+    }
+
+
+    #award-img-ghibli-2{
+      border-radius: 1000px;
+      width: 400px;
+      height: 400px;
+      margin: 10%;
+      margin-right: 30%;
+      display: flex;
+    }
+
+    #text-div-award-ghibli-red-2{
+      flex-direction: column;
+      display: flex ;
+      align-content: center;
+      width: 80%;
+      margin-left:10%;
+      margin-top: 5%;
+      margin-right: 20%;
+      margin-bottom: 5%;
+      text-align: left;
+      max-width: 500px;
+    }
+
+    #text-div-award-ghibli-red-2 h2{
+      color: #BD351F;
+      padding: 5%;
+      font-size: 3rem;
+    }
+
+    #text-div-award-ghibli-red-2 p{
+      color: #5A0E00;
+      padding: 5%;
+      font-size: 20px
+    }
+
+    #timeline-story{
+      background-color: #E2EBE8;
+      width: 100%;
+      max-height: 900vh;
+      padding-bottom: 50px;
+    }
+    #timeline{
+      width: 100%;
     }
 /*!! are to check or elaborate later*/

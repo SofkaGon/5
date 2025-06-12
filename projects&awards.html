@@ -6,6 +6,139 @@
   <title>Ghibli.about</title>
   <!--linking style sheet-->
   <link rel="stylesheet" href="stylesheet.css"/>
+  <style>
+    /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #5E84C5;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  transform: translateX(-50%);
+  position: relative;
+    z-index: 2;
+}
+
+/* Place the container to the right */
+.right {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+  </style>
 </head>
 <body>
   <!--nav section-->
@@ -20,9 +153,9 @@
   <div class="nav-wrapper" id="navWrapper">
     <ul class="nav">
       <a href="index.html"><li>ABOUT</li></a>
-      <a href="events.html"><li>EVENTS</li></a>
+      <a href="projects&awards.html"><li>STORY & PROJECTS</li></a>
       <a href="films.html"><li>FILMS</li></a>
-      <a href="projects&awards.html"><li>PROJECTS & AWARDS</li></a>
+      <a href="events.html"><li>EVENTS</li></a>
     </ul>
   </div>
 </nav>
@@ -30,15 +163,114 @@
 <header>
   <section id="intro">
     <div class="intro-content">
-      <h1 class="display-1">PROJECTS & AWARDS</h1>
+      <h1 class="display-1">STORY & PROJECTS</h1>
     </div>
   </section>
 </header>
 <!--sections start-->
 <main>
-  <div class="container">
-    <!-- Main content goes here -->
+<article id="award-ghibli-red">
+  <div>
+    <img id="award-img-ghibli" src="https://www-animeherald-com.exactdn.com/wp-content/uploads/2016/11/Hayao-Miyazaki-Press-Conference-001-20161113.jpg?strip=all&lossy=1&ssl=1">
   </div>
+  <div id="text-div-award-ghibli-red">
+        <h2>HAYAO MIYAZAKI</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+  </div>
+</article>
+<article id="award-ghibli-red">
+  <div id="text-div-award-ghibli-red-2">
+        <h2>ISAO TAKAHATA</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+  </div>
+  <div>
+    <img id="award-img-ghibli-2" src="https://deadline.com/wp-content/uploads/2018/04/isao-takahata.jpg?w=1024">
+  </div>
+</article>
+<article id="award-ghibli-red">
+  <div>
+    <img id="award-img-ghibli" src="https://aphrodite.gmanetwork.com/entertainment/articles/900_675_Main_Image10_0513__20200513112238.jpg">
+  </div>
+  <div id="text-div-award-ghibli-red">
+        <h2>TOSHIO SUZUKI</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+  </div>
+</article>
+<section id="timeline-story">
+  <div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2> March 1984 – Release of Nausicaä of the Valley of the Wind</h2>
+      <p>Hayao Miyazaki’s film becomes a major success and leads directly to the founding of Studio Ghibli.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>June 1985 – Founding of Studio Ghibli</h2>
+      <p>Established by Hayao Miyazaki, Isao Takahata, and Toshio Suzuki after the success of Nausicaä.</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>1986 – Nausicaä airs on "Friday Roadshow"</h2>
+      <p>The film is broadcast on national TV, marking the start of Ghibli's decades-long presence on Japanese television.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2> 1988 – Release of Grave of the Fireflies</h2>
+      <p>Directed by Isao Takahata, this film becomes one of Ghibli’s most emotionally powerful works, deeply tied to postwar themes.</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>2003 – Launch of First Full-Scale Ghibli 3D Sculpture Exhibition</h2>
+      <p>The inaugural immersive exhibit uses 3D sculptures to bring Ghibli’s films to life, beginning a new era of Ghibli exhibitions.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2023 – How Do You Live? Released Internationally</h2>
+      <p>Later renamed The Boy and the Heron internationally, it marks Studio Ghibli’s expansion into over 80 countries and regions.</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>2025 – Exhibition Returns to Tokyo After 22 Years</h2>
+      <p>The evolved 3D sculpture exhibit comes back to Tokyo for the first time since 2003.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2025 – 90th Anniversary of Isao Takahata’s Birth</h2>
+      <p>Special exhibits honor his life and contributions, especially through Grave of the Fireflies.</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>2025 – 80th Anniversary of the End of the Pacific War</h2>
+      <p>Marking the historical context behind Takahata’s most influential works.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2025 – First Public Display of Hideaki Anno’s Cruiser Maya Layout</h2>
+      <p>Previously unreleased artwork from Grave of the Fireflies is exhibited, connecting Ghibli to other animation legends.</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>2025 – Exhibit of Harmony Cells</h2>
+      <p>Rare “painting-like” animation cells are showcased to demonstrate Ghibli’s unique animation techniques.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2025 – Toshio Suzuki’s 8,800-Book Library Exhibition</h2>
+      <p>An entire section explores how the books Suzuki read throughout his life influenced Ghibli’s storytelling and production.</p>
+    </div>
+  </div>
+</section>
 </main>
 <footer>
   <section id="icons">
@@ -58,7 +290,7 @@
         </ul>
   	</div>
     <div>
-     <h4>EXIBITIONS</h4>
+     <h4>EXHIBITIONS</h4>
   			<ul class="list-unstyled" style="list-style-type: none;">
   				<li><a href="https://www.ghibli.jp/event/rittai/" target="_blank"> Ghibli's 3D Sculptures Exhibition</a></li>
 	  			<li><a href="https://www.ghibli.jp/event/suzuki/" target="_blank">Toshio Suzuki and Ghibli Exhibition</a></li>
