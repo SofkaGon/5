@@ -10,18 +10,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 <style>
+  /*additional body styling including x-overflow that makes sure content doesn't overflow in x axis and scrollbar therefor doesn't appear*/
 body {
   background-color: #f0f4f8;
   overflow-x: hidden; 
 }
-  #slider-white-ghibli-events{
+
+/* Section container with  gradient background and vertical alignment */
+#slider-white-ghibli-events{ 
   background: linear-gradient(135deg, #E2EBE8, #ffffff);
-  display: flex; justify-content: center; align-items: flex-start;
-  min-height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-start;
+  min-height: 100vh; /* Fill full screen height */
   z-index: 1;
   position: relative;
 }
 
+/* Slider wrapper with padding and centered content */
 .slider-container {
   width: 100%;
   max-width: 1000px;
@@ -30,11 +36,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    border-radius: 16px;
-
+  /*shadow */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08); 
+  /* Rounded corners */
+  border-radius: 16px; 
 }
 
+/* Individual slide style with ease transition */
 .swiper-slide {
   background: #fff;
   border-radius: 16px;
@@ -50,19 +58,26 @@ body {
   justify-content: center;
   width: 100%;
 }
+
+/* Slide hover effect */
 .swiper-slide:hover { 
-  transform: translateY(-8px);
+  /* Moves up*/
+  transform: translateY(-8px); 
 }
+
+/* Image inside each slide */
 .card-img {
   width: 100%;
   max-width: 400px;
   height: auto;
   max-height: 200px;
-  object-fit: cover;
-  border-radius: 1000px;
+  object-fit: cover; 
+  border-radius: 1000px; 
   margin: 20px auto;
   display: block;
 }
+
+/* Navigation buttons style */
 .swiper-button-prev, .swiper-button-next {
   position: absolute;
   left: 50%;
@@ -70,6 +85,8 @@ body {
   font-size: 32px;
   color: #1d72b8;
 }
+
+/* Overlapping transform definitions; this one takes effect */
 .swiper-button-prev,
 .swiper-button-next {
   top: 50%;
@@ -79,14 +96,19 @@ body {
   z-index: 10;
 }
 
+/* Position and rotate left arrow */
 .swiper-button-prev {
   left: 20%;
   rotate: -90deg;
 }
+
+/* Position and rotate right arrow */
 .swiper-button-next {
   left: 80%;
   rotate: -90deg;
 }
+
+/* full height for Swiper layout */
 .swiper,
 .swiper-wrapper,
 .swiper-slide {
@@ -123,6 +145,7 @@ body {
 </header>
 <!--sections start-->
 <main>
+  <!--section about first upcomming event-->
   <div style="background-color: #ffffff; height: 20px; width: 100%;"></div>
   <section id="events-ghibli-green">
     <div>
@@ -139,7 +162,7 @@ body {
     </div>
   </section>
 <div style="background-color: #ffffff; height: 20px; width: 100%;"></div>
-
+  <!--slider interactive section to discover more events-->
     <section id="slider-white-ghibli-events">
     <!--blue-->
 <div class="swiper">
@@ -200,12 +223,14 @@ body {
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 </section>
+<!--interactive calendar section-->>
 <div style="background-color: #ffffff; height: 20px; width: 100%;"></div>
 <section id="ghibli-events-calendar-red">
   <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FWarsaw&showPrint=0&src=MTdhOWJhYjAyNjZhMTNmMjk5NTYxMjU5Y2ZiOTYzOWIyMjljNGEyZTMwOWFlMTNjMDQwODUzM2JkNGZkNDkzYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23ad1457" style="border:solid 20px #BD351F" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </section>
 </main>
 <div style="background-color: #ffffff; height: 20px; width: 100%;"></div>
+<!--footer-->
 <footer>
   <section id="icons">
     <div><a href="https://www.facebook.com/GhibliUSA/"><img onmouseover="document.getElementById('face-icon').src='images-index/facebook_3670203.png'" id="face-icon" onmouseleave="document.getElementById('face-icon').src='images-index/facebook_1384005.png'" src="images-index/facebook_1384005.png"></a></div>

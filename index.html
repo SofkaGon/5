@@ -7,7 +7,7 @@ Teacher: Ms. Hoitink
 
 School: Pembina Trails Collegiate (PTC)
 
-Date Last Modified:-->
+Date Last Modified:12.6.2025-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +18,7 @@ Date Last Modified:-->
   <!--linking style sheet-->
   <link rel="stylesheet" href="stylesheet.css"/>
   <style>
+    /*grid container, establishing collumns and spacing and colour*/
     .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
@@ -25,22 +26,23 @@ Date Last Modified:-->
   background-color: rgb(255, 255, 255);
   padding: 2%;
 }
-
+/*text styling*/
 .grid-container > div {
   text-align: center;
   font-size: 20px;
-  color: #5E84C5;
+  color: #2F4D78;
 }
-
+/*images widght and height*/
 #img-div-2{
   max-width: 400px;
   height: 225px;
 }
+/*images widght and height*/
 #img-div{
   max-width: 200px;
   height: 225px;
 }
-
+/*grid spacing using columns and rows and spans*/
 .item1 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
@@ -74,7 +76,7 @@ Date Last Modified:-->
     grid-row: 3 / span 2;
 
 }
-
+/*image section spacing*/
 #red-nav-img{
   background-color: #DCB9B5;
   width: 100%;
@@ -87,7 +89,7 @@ Date Last Modified:-->
   flex-wrap: wrap;
 
 }
-
+    /*styling for paragraph*/
 #red-nav-img p{
   justify-content: center;
   text-align: center;
@@ -96,7 +98,7 @@ Date Last Modified:-->
   font-size: 20px
 
 }
-
+/*section styling*/
 .images-nav-red{
   border: #ffffff;
   border-width: 5%;
@@ -138,13 +140,12 @@ Date Last Modified:-->
 </header>
 <!--sections start-->
 <main>
-
-
+<!--section that explains what ghibli is and uses grid with images and text to additionally elaborate-->
 <section id="blue-section">
   <content id="blue-section-content">
     <div>
       <h2>STUDIO GHIBLI</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+      <p style="line-height: 150%;">Studio Ghibli is a world-renowned animation studio celebrated for its hand-drawn artistry, emotionally rich stories, and imaginative worlds. Its films blend fantasy with everyday life, capturing everything from epic adventures to quiet moments of wonder. With unforgettable characters and a signature visual style, Ghibli has redefined what animated cinema can be.</p>
     </div>
   </content>
 </section>
@@ -153,21 +154,22 @@ Date Last Modified:-->
     <img id="about-img-ghibli" src="https://www.awn.com/sites/default/files/styles/large_featured/public/image/featured/ghibli1.jpg?itok=Ue3NGCjw">
   </div>
   <div id="text-div-about-ghibli-blue-index">
-        <h2>STUDIO GHIBLI</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+        <h2>VISION</h2>
+      <p>Founded in 1985, Studio Ghibli was brought to life by visionary creators Hayao Miyazaki, Isao Takahata, and producer Toshio Suzuki. Their goal was to create animation that pushed boundaries, both artistically and emotionally. Together, they built a studio where storytelling, craftsmanship, and heart take center stage.</p>
   </div>
 </article>
 <section id="about-white-section">
 <div class="grid-container">
   <div class="item1"><img id="img-div-2" src="https://www.ghibli.jp/images/omake2.jpg "></div>
-  <div class="item2"><p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p></div>
+  <div class="item2"><p style="text-align: left;">Ghibli films often carry gentle but powerful messages. Respect for nature, the strength of innocence, anti-war values, and the beauty of everyday life. These themes connect across cultures and ages, leaving lasting impressions on audiences everywhere.</p></div>
   <div class="item3"><img id="img-div-2" src="https://www.ghibli.jp/gallery/majo001.jpg"></div>  
   <div class="item4"><img id="img-div" src="https://www.ghibli.jp/gallery/laputa041.jpg"></div>
-  <div class="item5"><p style="text-align: right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p></div>
+  <div class="item5"><p style="text-align: right;">Beyond films, Studio Ghibli nurtures creativity through its enchanting museum, international exhibitions, and commitment to environmental values. Every project, big or small, reflects a love for storytelling and a deep care for the world we share.</p></div>
   <div class="item6"><img id="img-div-2" src="https://www.ghibli.jp/images/omake1.jpg"></div>
   <div class="item7"><img id="img-div" src="https://www.ghibli.jp/gallery/nausicaa050.jpg"></div>
 </div>
 </section>
+<!--section with quick links and images of other ghibli attractions-->
 <h2 style="background-color: #DCB9B5;color: #BD351F;text-align: center;padding: 2%;font-size: 3rem;">DISCOVER GHIBLI</h2>
 <section id="red-nav-img">
   <div id="red-nav-div">
@@ -202,6 +204,7 @@ Date Last Modified:-->
   </div>
 </section>
 </main>
+<!--footer-->
 <footer>
   <section id="icons">
     <div><a href="https://www.facebook.com/GhibliUSA/"><img onmouseover="document.getElementById('face-icon').src='images-index/facebook_3670203.png'" id="face-icon" onmouseleave="document.getElementById('face-icon').src='images-index/facebook_1384005.png'" src="images-index/facebook_1384005.png"></a></div>
@@ -263,4 +266,3 @@ Date Last Modified:-->
 
 </body>
 </html>
-<!--Date Last Modified: fill it!!-->

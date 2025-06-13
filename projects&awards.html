@@ -49,6 +49,7 @@
   z-index: 1;
 }
 
+
 /* Place the container to the left */
 .left {
   left: 0;
@@ -101,9 +102,27 @@
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: #E2EBE8;
   position: relative;
   border-radius: 6px;
+  color: #2F4D78;
+}
+/*additional padding*/
+.content h2{
+  padding: 5%;
+}
+/*styling for paragraph of additional padding*/
+.content p{
+  padding: 5%;
+}
+/*transition of backround colour that lasts 2 seconds*/
+.content :hover{
+  background-color: white;
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  transition: background-color;
+  transition-duration: 2s;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -163,25 +182,26 @@
 <header>
   <section id="intro">
     <div class="intro-content">
-      <h1 class="display-1">STORY & PROJECTS</h1>
+      <h1 class="display-1">STORY  <span style="color: #E2EBE8;">& </span> PROJECTS</h1>
     </div>
   </section>
 </header>
 <!--sections start-->
 <main>
+  <!--article about founders of ghibli and a history video-->
 <article id="award-ghibli-red">
   <div>
     <img id="award-img-ghibli" src="https://www-animeherald-com.exactdn.com/wp-content/uploads/2016/11/Hayao-Miyazaki-Press-Conference-001-20161113.jpg?strip=all&lossy=1&ssl=1">
   </div>
   <div id="text-div-award-ghibli-red">
         <h2>HAYAO MIYAZAKI</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+      <p>Hayao Miyazaki is a legendary Japanese animator, director, and co-founder of Studio Ghibli. He is known for creating iconic films like Spirited Away, My Neighbor Totoro, and Princess Mononoke, blending deep storytelling with hand-drawn artistry. His vision shaped Ghibli into a globally celebrated studio, inspiring generations through magical, emotionally rich worlds.</p>
   </div>
 </article>
 <article id="award-ghibli-red">
   <div id="text-div-award-ghibli-red-2">
         <h2>ISAO TAKAHATA</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+      <p>Isao Takahata was a renowned Japanese director and co-founder of Studio Ghibli, known for his thoughtful and realistic storytelling. He directed powerful films like Grave of the Fireflies and The Tale of the Princess Kaguya, bringing emotional depth and a unique artistic style to the studio. His work complemented Miyazaki’s, helping define Ghibli’s diverse and meaningful legacy.</p>
   </div>
   <div>
     <img id="award-img-ghibli-2" src="https://deadline.com/wp-content/uploads/2018/04/isao-takahata.jpg?w=1024">
@@ -193,9 +213,14 @@
   </div>
   <div id="text-div-award-ghibli-red">
         <h2>TOSHIO SUZUKI</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud mollit anim id est laborum.</p>
+      <p>Toshio Suzuki is a key producer and co-founder of Studio Ghibli, instrumental in bringing its films to life. As a close collaborator of Miyazaki and Takahata, he guided the studio’s projects from concept to global success. His leadership and vision helped make Ghibli one of the most respected animation studios in the world.</p>
   </div>
 </article>
+  <div style="background-color: #DCB9B5; display: flex; justify-content: center; padding-top: 5%;padding-bottom: 5%; min-height: 500px; max-height: 1000px; flex-direction: column; align-items: center;">
+    <iframe width="100%" style="min-height: 500px; max-height: 600px;" src="https://www.youtube.com/embed/r8lqx9Ag54M?si=P-KsOo0XgsqwHIhW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <figcaption><a style="text-align: center; color: #5A0E00; font-size: 20px;" href="https://www.youtube.com/watch?v=r8lqx9Ag54M&t=79s">Link To Ghibli History Video</a></figcaption>
+  </div>
+  <!--timeline with important events-->
 <section id="timeline-story">
   <div class="timeline">
   <div class="container left">
@@ -272,6 +297,7 @@
   </div>
 </section>
 </main>
+<!--footer-->
 <footer>
   <section id="icons">
     <div><a href="https://www.facebook.com/GhibliUSA/"><img onmouseover="document.getElementById('face-icon').src='images-index/facebook_3670203.png'" id="face-icon" onmouseleave="document.getElementById('face-icon').src='images-index/facebook_1384005.png'" src="images-index/facebook_1384005.png"></a></div>
